@@ -1,0 +1,81 @@
+.com-number-password-input {
+  input {
+    border-width: 0;
+    font-size: 0.48rem;
+    font-family: PingFangSC-Thin, PingFang SC;
+    font-weight: 100;
+    color: black;
+    line-height: 0.66667rem;
+    margin-bottom: 0.18667rem;
+    margin-top: 0.18667rem;
+    width: 70%;
+  }
+  .keyboard {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    padding-bottom: 22px;
+    background-color: #d1d5db;
+    user-select: none;
+    transform: translateY(100%);
+    transition: all .3s;
+    &.visible {
+      transform: translateY(0);
+    }
+    .safe {
+      font-size: 28px;
+      text-align: center;
+      color: #999;
+      padding: 16px 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .icon {
+        width: 36px;
+        height: 36px;
+        background: url(./safe-icon.png) no-repeat center / cover;
+        margin-right: 6px;
+      }
+    }
+    .container {
+      display: flex;
+      padding: 6px 0 0 6px;
+      .keys {
+        display: flex;
+        -webkit-box-flex: 3;
+        flex: 3;
+        flex-wrap: wrap;
+        .key {
+          position: relative;
+          -webkit-box-flex: 1;
+          flex: 1;
+          flex-basis: 33%;
+          box-sizing: border-box;
+          padding: 0 12px 12px 0;
+          .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 96px;
+            font-size: 56px;
+            line-height: 1.5;
+            background-color: #fff;
+            border-radius: 16px;
+            box-shadow: 0 4px 0 #999;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+    .collapse-icon {
+      width: 60px;
+      height: 48px;
+    }
+    .delete-icon {
+      width: 64px;
+      height: 44px;
+    }
+  }
+}

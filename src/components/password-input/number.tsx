@@ -95,7 +95,7 @@ function PasswordNumberInput(params: NumberInputParams) {
     if (typeof key === 'number') {
       passwordRef.current = password + String(key);
     } else {
-      if (key.props.class.indexOf('collapse') > -1) {
+      if (key.props.className.indexOf('collapse') > -1) {
         // 收起键盘
         setKbVisible(false);
         if (onBlur) onBlur.apply(null, [passwordRef.current]);
